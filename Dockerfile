@@ -29,5 +29,5 @@ RUN ln -sf /config /root/.flexget
 
 # Add flexget to runit
 RUN mkdir /etc/service/flexget
-ADD flexget.sh /etc/service/flexget/run
+ADD start.sh /etc/service/flexget/run
 RUN chmod +x /etc/service/flexget/run
