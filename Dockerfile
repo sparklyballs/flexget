@@ -25,7 +25,7 @@ pip install --upgrade six>=1.70 && \
 chown -R nobody:users /usr/local/bin/flexget
 VOLUME /config
 VOLUME /output
-RUN ln -sf /config /root/.flexget
+
 
 # Add flexget to runit
 RUN mkdir /etc/service/flexget
