@@ -22,7 +22,7 @@ apt-get autoremove && \
 apt-get autoclean && \
 pip install flexget && \
 pip install --upgrade six>=1.70 && \
-chown -R nobody:users /usr/bin/flexget
+chown -R nobody:users /usr/bin/local/flexget
 VOLUME /config
 VOLUME /output
 RUN ln -sf /config /root/.flexget
