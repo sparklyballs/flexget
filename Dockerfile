@@ -14,7 +14,7 @@ RUN usermod -d /output nobody
 
 RUN apt-get update && \
 apt-get install -y python-pip && \
-pip install flexget && \
+pip install flexget
 
 VOLUME /config
 VOLUME /output
