@@ -1,3 +1,3 @@
 #!/bin/bash
 
-flexget daemon start
+exec /sbin/setuser nobody flexget daemon start
