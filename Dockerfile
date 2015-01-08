@@ -19,6 +19,6 @@ pip install flexget
 VOLUME /config
 VOLUME /output
 RUN ln -sf /config /root/.flexget
-RUN echo "flexget daemon start" /start.sh && \
+RUN echo "flexget daemon start" >> /start.sh && \
 chmod +x /start.sh
 ENTRYPOINT ["/start.sh"]
