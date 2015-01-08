@@ -21,7 +21,7 @@ apt-get install -qq --force-yes python2.7 python-dev python-pip python-transmiss
 apt-get autoremove && \
 apt-get autoclean && \
 pip install flexget && \
-pip install --upgrade six>=1.70
+pip install --upgrade six>=1.70 && \
 chown -R nobody:users /usr/local/bin/flexget
 VOLUME /config
 VOLUME /output
